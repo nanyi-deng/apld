@@ -40,9 +40,9 @@ and New Zealand.
 | `data/legal_instruments.csv` | 39 | Statutes, regulations, and treaties, with source-verification tier |
 | `data/provisions.csv` | 42 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
 | `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 42 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/sources.csv` | 45 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 23 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects |
-| `data/enforcement_statistics.csv` | 56 | Jurisdiction-year enforcement figures for 19 of 23 jurisdictions, including explicit confirmed-absence findings |
+| `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of 23 jurisdictions (EU excluded by design), including explicit confirmed-absence findings |
 
 `docs/data_dictionary.csv` documents every field and its controlled
 vocabulary. `docs/methodology.md` explains the coding approach and its
@@ -62,16 +62,17 @@ and found to be incorrect; see `docs/methodology.md` for examples.
 
 ## What is *not* yet in this release
 
-- `enforcement_statistics` covers 19 of 23 jurisdictions. For 5 of those
-  (China, Taiwan, Macau, Northern Ireland, New Zealand) the entry is an
-  explicit `no_official_statistics_published` finding, not a number — a
-  systematic search confirmed no government body publishes cruelty-
-  specific enforcement figures there. The EU is intentionally excluded
-  (no EU-level enforcement mechanism exists to measure). Still missing:
-  US federal, Canada federal (FBI NIBRS and Statistics Canada are
-  interactive tools that resist web scraping and need a direct API/CSV
-  pull), and Switzerland (a queryable NGO database exists but was not
-  yet retrieved with enough rigor).
+- `enforcement_statistics` covers 22 of 23 jurisdictions (only the EU is
+  excluded, by design — no EU-level enforcement mechanism exists to
+  measure). For 5 of those 22 (China, Taiwan, Macau, Northern Ireland,
+  New Zealand) the entry is an explicit `no_official_statistics_published`
+  finding, not a number — a systematic search confirmed no government
+  body publishes cruelty-specific enforcement figures there. US federal
+  data (2016–2020) comes from a peer-reviewed academic compilation of FBI
+  NIBRS data rather than an FBI publication directly — 2021–2024 need a
+  free api.data.gov key this project hasn't obtained yet. Switzerland's
+  figures (2020–2021) are the most recent available — the source NGO
+  appears to have stopped publishing this annual analysis after 2021.
 - Several jurisdictions still have known, explicitly flagged gaps (e.g.
   New Zealand's *current* consolidated statutory text remains blocked by
   a Cloudflare challenge that resists automated retrieval — a 2007
