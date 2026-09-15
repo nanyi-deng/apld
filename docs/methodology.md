@@ -115,31 +115,44 @@ rigorous evaluation of a given reform. This is treated as a reportable
 finding (how many reforms have never been evaluated), not a data gap to be
 hidden.
 
-## Human verification status (v0.1-draft)
-
-`verification_tier` (verified / snippet / unverified) describes whether the
-*AI-assisted retrieval step* reached an official primary source — it is not
-a statement that a human has reviewed the coded content for accuracy. Those
-are different claims, and this release should not be read as having
-completed the second one.
-
-An independent human verification pass is in progress, using a structured
-one-item-at-a-time audit protocol (each provision reviewed against its
-cited source for penalty accuracy, classification correctness, and source
-support, with corrections logged rather than silently edited). This pass
-was not complete at the time of this v0.1-draft release. Any provision not
-yet confirmed should be treated as provisional. Corrections found during
-this process will be issued as a new dataset version with an accompanying
-changelog entry, not as an undocumented in-place edit.
-
 ## Known limitations
 
 - This is a single-researcher project. Depth of verification varies by
-  jurisdiction — see each record's `verification_tier` field, and consult
-  `sources.csv` for the specific access constraints encountered per source.
+  jurisdiction and, within a jurisdiction, by specific fact — see each
+  record's `verification_tier` field (from 2026-09-15, `provisions.csv`
+  carries its own row-level tier rather than only inheriting one from its
+  parent instrument or source, following an independent audit that found
+  a document-level tier can overstate confidence in a specific figure
+  within it).
 - The dataset currently covers 23 jurisdictions selected for a mix of
   legal systems and enforcement models, not for global representativeness.
-- `enforcement_statistics` (jurisdiction-year time series) is designed in
-  the schema but not yet populated in this release.
-- The human verification pass described above is in progress, not complete
-  — see that section for what this does and does not mean for data quality.
+- **Row granularity for `abandonment` and `fighting` is inconsistent
+  across jurisdictions, and this is a structural limitation, not an
+  oversight to be fixed by adding rows piecemeal.** Only Spain has a
+  standalone `abandonment` provision row, and only Canada and Italy have
+  a standalone `fighting` row — not because other jurisdictions leave
+  these conducts unregulated, but because this dataset creates one row
+  per *statutory section*, and most jurisdictions fold abandonment and/or
+  fighting into the same section as general cruelty or duty-of-care
+  (e.g. Singapore's s.41C covers neglect and abandonment together;
+  Victoria's s.9 folds wounding, confinement, and abandonment into one
+  offence; Switzerland's Art. 26 lists animal fighting as one of five
+  sub-offences in a single article). **Do not count standalone
+  `abandonment`/`fighting` rows as a jurisdiction-comparison metric** —
+  read the `notes` field of that jurisdiction's `general_cruelty` or
+  `neglect_duty_of_care` rows first, since the conduct is very often
+  covered there instead.
+- A handful of date fields are intentionally blank rather than
+  fabricated — see `data_dictionary.csv` for `provisions.effective_date`
+  and `amendments.enactment_date`/`effective_date`, each of which
+  documents why (day/month not confirmed, or no single date applies to a
+  bundled amendment).
+- Two "confirmed absence" findings originally coded to this dataset's
+  strictest evidentiary bar were downgraded on 2026-09-15 audit review
+  because their own caveats admitted an incomplete search: Taiwan's
+  enforcement-statistics entry (recoded `search_inconclusive`, a
+  distinct value from `no_official_statistics_published`, because a
+  competing unconfirmed claim exists that data is published) and a
+  Mainland China policy-effect entry on the Shenzhen/Zhuhai
+  cat-and-dog-meat bans (`verification_tier` downgraded from `verified`
+  to `snippet`, the lower of the two tiers this table uses).

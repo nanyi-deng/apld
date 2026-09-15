@@ -38,15 +38,16 @@ and New Zealand.
 |---|---|---|
 | `data/jurisdictions.csv` | 23 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
 | `data/legal_instruments.csv` | 39 | Statutes, regulations, and treaties, with source-verification tier |
-| `data/provisions.csv` | 42 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
+| `data/provisions.csv` | 42 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
 | `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 45 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/sources.csv` | 47 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 35 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 23 jurisdictions |
-| `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of 23 jurisdictions (EU excluded by design), including explicit confirmed-absence findings |
+| `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of 23 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
 
 `docs/data_dictionary.csv` documents every field and its controlled
 vocabulary. `docs/methodology.md` explains the coding approach and its
-limitations in full.
+limitations in full, including a 2026-09-15 independent-audit section
+covering what was checked, what was found and fixed, and what remains open.
 
 ## A note on what "verified" means here
 
@@ -58,27 +59,29 @@ published field — not an internal QA note — because a comparative legal
 dataset that hides its own uncertainty is more dangerous than one that
 states it plainly. Several widely-circulated claims about specific
 jurisdictions' law were checked against primary sources during construction
-and found to be incorrect; see `docs/methodology.md` for examples.
+and found to be incorrect; see `docs/methodology.md` for examples. As of
+2026-09-15, `provisions.csv` carries this tier at the row level rather than
+only inheriting one from its parent legal instrument or source, after an
+independent audit found that a document-level tier can overstate confidence
+in a specific figure within it.
 
 ## What is *not* yet in this release
 
-- `enforcement_statistics` covers 22 of 23 jurisdictions (only the EU is
-  excluded, by design — no EU-level enforcement mechanism exists to
-  measure). For 5 of those 22 (China, Taiwan, Macau, Northern Ireland,
-  New Zealand) the entry is an explicit `no_official_statistics_published`
-  finding, not a number — a systematic search confirmed no government
-  body publishes cruelty-specific enforcement figures there. US federal
-  data (2016–2020) comes from a peer-reviewed academic compilation of FBI
-  NIBRS data rather than an FBI publication directly — 2021–2024 need a
-  free api.data.gov key this project hasn't obtained yet. Switzerland's
-  figures (2020–2021) are the most recent available — the source NGO
-  appears to have stopped publishing this annual analysis after 2021.
+- Row granularity for `abandonment` and `fighting` conduct is uneven across
+  jurisdictions by design of the schema (one row per statutory section) —
+  see `docs/methodology.md`'s Known Limitations section before using
+  standalone-row counts as a cross-jurisdiction comparison.
 - Several jurisdictions still have known, explicitly flagged gaps (e.g.
   New Zealand's *current* consolidated statutory text remains blocked by
   a Cloudflare challenge that resists automated retrieval — a 2007
   official reprint was recovered instead, so current penalty figures rest
-  on secondary sources rather than primary text). These are documented in
-  each record's `notes` field, not silently smoothed over.
+  on secondary sources rather than primary text; Macau's sources needed
+  a proxy-mirror fetch after every direct attempt failed). These are
+  documented in each record's `notes` field, not silently smoothed over.
+- US federal enforcement data (2016–2020) comes from a peer-reviewed
+  academic compilation of FBI NIBRS data rather than an FBI publication
+  directly — 2021–2024 need a free api.data.gov key this project hasn't
+  obtained yet.
 - A Chinese-language policy brief distilling findings for a legislative-
   reference audience is planned as a companion document, not yet written.
 
