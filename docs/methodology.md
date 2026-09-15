@@ -115,6 +115,23 @@ rigorous evaluation of a given reform. This is treated as a reportable
 finding (how many reforms have never been evaluated), not a data gap to be
 hidden.
 
+## Human verification status (v0.1-draft)
+
+`verification_tier` (verified / snippet / unverified) describes whether the
+*AI-assisted retrieval step* reached an official primary source — it is not
+a statement that a human has reviewed the coded content for accuracy. Those
+are different claims, and this release should not be read as having
+completed the second one.
+
+An independent human verification pass is in progress, using a structured
+one-item-at-a-time audit protocol (each provision reviewed against its
+cited source for penalty accuracy, classification correctness, and source
+support, with corrections logged rather than silently edited). This pass
+was not complete at the time of this v0.1-draft release. Any provision not
+yet confirmed should be treated as provisional. Corrections found during
+this process will be issued as a new dataset version with an accompanying
+changelog entry, not as an undocumented in-place edit.
+
 ## Known limitations
 
 - This is a single-researcher project. Depth of verification varies by
@@ -124,3 +141,5 @@ hidden.
   legal systems and enforcement models, not for global representativeness.
 - `enforcement_statistics` (jurisdiction-year time series) is designed in
   the schema but not yet populated in this release.
+- The human verification pass described above is in progress, not complete
+  — see that section for what this does and does not mean for data quality.

@@ -2,6 +2,18 @@
 
 *"CAPLD" is a working title, not yet finalized.*
 
+> **Status: v0.1-draft — human verification pass in progress, not yet
+> complete.** Every record already carries a `verification_tier` field
+> stating whether *the AI-assisted retrieval step* fetched an official
+> primary source (`verified`), relied on a secondary/search-snippet source
+> (`snippet`), or drew on unconfirmed background knowledge (`unverified`).
+> **That field describes sourcing, not human review.** No independent human
+> spot-check of the coded content has been completed yet for this release —
+> that pass is in progress using a structured audit protocol (see
+> `docs/methodology.md`). Treat specific figures as provisional until a
+> jurisdiction's records are confirmed; corrections will be issued as new
+> versions with a changelog, not silently edited in place.
+
 A structured, provision-level dataset comparing animal anti-cruelty / animal
 protection law across 23 jurisdictions. Unlike existing country-level
 scoring indices (e.g. the World Animal Protection Animal Protection Index)

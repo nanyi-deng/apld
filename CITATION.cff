@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "Comparative Animal Protection Law Database (CAPLD) v0.1"
+title: "Comparative Animal Protection Law Database (CAPLD) v0.1-draft"
+version: "0.1-draft"
 type: dataset
 authors:
   - family-names: "Deng"
@@ -26,4 +27,7 @@ abstract: >
   Victoria, and New Zealand). Applies a policy-surveillance / legal-
   epidemiology coding methodology, not previously applied to this legal
   domain, with an explicit three-tier source-verification scheme
-  (verified / snippet / unverified) shipped alongside the data.
+  (verified / snippet / unverified) shipped alongside the data. THIS IS A
+  DRAFT RELEASE: an independent human verification pass over the coded
+  content is in progress and not yet complete. The verification_tier field
+  describes source retrieval quality, not human review status.
