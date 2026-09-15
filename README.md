@@ -38,10 +38,10 @@ and New Zealand.
 | File | Rows | Contents |
 |---|---|---|
 | `data/jurisdictions.csv` | 23 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
-| `data/legal_instruments.csv` | 38 | Statutes, regulations, and treaties, with source-verification tier |
-| `data/provisions.csv` | 41 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
-| `data/amendments.csv` | 27 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 36 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/legal_instruments.csv` | 39 | Statutes, regulations, and treaties, with source-verification tier |
+| `data/provisions.csv` | 42 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
+| `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
+| `data/sources.csv` | 39 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 23 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects |
 | `data/enforcement_statistics.csv` | 44 | Jurisdiction-year enforcement figures (prosecutions, convictions, arrests) for 10 jurisdictions with strong official time series |
 
