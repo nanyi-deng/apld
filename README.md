@@ -41,8 +41,9 @@ and New Zealand.
 | `data/legal_instruments.csv` | 38 | Statutes, regulations, and treaties, with source-verification tier |
 | `data/provisions.csv` | 39 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
 | `data/amendments.csv` | 24 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 33 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/sources.csv` | 34 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 23 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects |
+| `data/enforcement_statistics.csv` | 44 | Jurisdiction-year enforcement figures (prosecutions, convictions, arrests) for 10 jurisdictions with strong official time series |
 
 `docs/data_dictionary.csv` documents every field and its controlled
 vocabulary. `docs/methodology.md` explains the coding approach and its
@@ -62,8 +63,12 @@ and found to be incorrect; see `docs/methodology.md` for examples.
 
 ## What is *not* yet in this release
 
-- `enforcement_statistics` (jurisdiction-year enforcement time series) is
-  designed but not yet populated.
+- `enforcement_statistics` covers 10 of the 23 jurisdictions so far (those
+  with strong existing official time series: France, Germany, Japan,
+  South Korea, Hong Kong, Australia NSW/VIC, Spain, England). The
+  remaining 13 need dedicated retrieval work — several official sources
+  (FBI NIBRS, Statistics Canada) are interactive tools that resist plain
+  web scraping and need a direct API/CSV pull instead.
 - Several jurisdictions have known, explicitly flagged gaps (e.g. New
   Zealand's primary statutory text could not be retrieved this round;
   Macau's sources are the weakest-verified in the dataset). These are

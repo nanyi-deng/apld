@@ -1,0 +1,45 @@
+stat_id,jurisdiction_id,period,metric_type,value,value_is_rate,data_source_type,source_id,caveat
+FR-2016-01,FR,2016,persons_charged,1400,FALSE,official_government,SRC-FR-04,'Personnes mises en cause' (persons implicated) - French term is broader than a formal charge; recorded here as the closest available metric_type.
+FR-2025-01,FR,2025,persons_charged,2900,FALSE,official_government,SRC-FR-04,2025 figure is provisional (year not yet complete per the bulletin's own note). Same 'personnes mises en cause' caveat as FR-2016-01.
+FR-2016-2025-01,FR,2016-2025,prosecutions_initiated,19200,FALSE,official_government,SRC-FR-04,"Decade total ('affaires' registered by parquets), average >1,900/year. Sources: gendarmerie 60%, police 33%, private individuals 5%, administrations 2%."
+FR-2016-2025-02,FR,2016-2025,convictions,93,TRUE,official_government,SRC-FR-04,Conviction rate AT tribunal correctionnel specifically (91% of prosecuted cases reach this venue) - not the rate across all initial reports.
+DE-2018-01,DE,2018,convictions,815,FALSE,official_government,SRC-DE-02,TierSchG as 'most serious offence' convention undercounts true violations - see caveat on DE-2024-01 for the mechanism.
+DE-2019-01,DE,2019,convictions,906,FALSE,official_government,SRC-DE-02,
+DE-2020-01,DE,2020,convictions,1038,FALSE,official_government,SRC-DE-02,
+DE-2021-01,DE,2021,convictions,1008,FALSE,official_government,SRC-DE-02,
+DE-2022-01,DE,2022,convictions,966,FALSE,official_government,SRC-DE-02,
+DE-2023-01,DE,2023,convictions,999,FALSE,official_government,SRC-DE-02,
+DE-2024-01,DE,2024,convictions,1156,FALSE,official_government,SRC-DE-02,"German statistical convention always ranks a StGB (general criminal code) offence as the 'most serious offence' ahead of TierSchG regardless of actual sentence severity - anyone convicted of both a StGB offence and a TierSchG violation in the same act is counted only under the StGB offence. True TierSchG violation counts are therefore systematically undercounted relative to this series. ~96% of convictions each year result in a fine, not imprisonment; of those imprisoned, most get suspended sentences."
+JP-2015-01,JP,2015,persons_arrested,56,FALSE,official_government,SRC-JP-01,Article 44 (動物虐待事犯) arrests/cleared cases.
+JP-2016-01,JP,2016,persons_arrested,62,FALSE,official_government,SRC-JP-01,
+JP-2017-01,JP,2017,persons_arrested,68,FALSE,official_government,SRC-JP-01,
+JP-2018-01,JP,2018,persons_arrested,84,FALSE,official_government,SRC-JP-01,
+JP-2019-01,JP,2019,persons_arrested,105,FALSE,official_government,SRC-JP-01,
+JP-2020-01,JP,2020,persons_arrested,102,FALSE,official_government,SRC-JP-01,
+JP-2021-01,JP,2021,persons_arrested,170,FALSE,official_government,SRC-JP-01,
+JP-2022-01,JP,2022,persons_arrested,166,FALSE,official_government,SRC-JP-01,
+JP-2023-01,JP,2023,persons_arrested,181,FALSE,official_government,SRC-JP-01,Record high in this series.
+JP-2024-01,JP,2024,persons_arrested,160,FALSE,official_government,SRC-JP-01,Down 11.6% from the 2023 record but still historically high per the source report's own framing.
+KR-2021-2024-01,KR,2021-2024,persons_arrested,4835,FALSE,official_government,SRC-KR-02,Total police case volume over the period; arrest rate 70.5% (see KR-2021-2024-02).
+KR-2021-2024-02,KR,2021-2024,persons_arrested,70.5,TRUE,official_government,SRC-KR-02,Arrest rate as a percentage of cases handled.
+KR-2020-2024-01,KR,2020-2024,prosecutions_initiated,4601,FALSE,official_government,SRC-KR-02,Prosecutorial referrals over the period; indictment rate 45.1% (see KR-2020-2024-02).
+KR-2020-2024-02,KR,2020-2024,prosecutions_initiated,45.1,TRUE,official_government,SRC-KR-02,Indictment rate as a percentage of referrals.
+KR-2020-2024-03,KR,2020-2024,custodial_sentences,7,TRUE,official_government,SRC-KR-02,First-instance custodial sentencing rate - only 29 people received actual prison time nationwide over five years despite statutory-penalty increases. Fines: 68.8% of first-instance outcomes.
+HK-2023-2025-01,HK,2023-2025,prosecutions_initiated,82,FALSE,official_government,SRC-HK-01,"Combined HKPF+AFCD prosecutions. Context caveat: over 90% of AFCD-received reports are non-cruelty nuisance complaints (per the same LCQ9 source), so this 82 is out of a much larger raw-report volume, not a low conversion rate from cruelty-specific reports alone."
+AU-NSW-2024-01,AU-NSW,2024-2025,complaints_investigated,16713,FALSE,ngo_self_reported,SRC-AUNSW-01,"RSPCA NSW, FY2024-25 (RSPCA Australia National Statistics 2024-2025, Table 5)."
+AU-NSW-2024-02,AU-NSW,2024-2025,prosecutions_finalised,226,FALSE,ngo_self_reported,SRC-AUNSW-01,Of which 119 successful (see AU-NSW-2024-03).
+AU-NSW-2024-03,AU-NSW,2024-2025,convictions,119,FALSE,ngo_self_reported,SRC-AUNSW-01,'Successful prosecutions' out of 226 finalised.
+AU-NSW-2024-04,AU-NSW,2024-2025,persons_charged,991,FALSE,ngo_self_reported,SRC-AUNSW-01,'Charges laid.'
+AU-NSW-2024-05,AU-NSW,2024-2025,routine_inspections,49,FALSE,ngo_self_reported,SRC-AUNSW-01,
+AU-FED-2019-2025-01,AU-FED,2019-2025,complaints_investigated,73997,FALSE,ngo_self_reported,SRC-AUNSW-01,"NATIONAL (all-Australia) figure for FY2019-20, from RSPCA Australia National Statistics Table 6 - attributed to AU-FED only because no generic 'AU' jurisdiction_id exists in this dataset; this is RSPCA-wide data, not specific to any single Act. Compare to AU-FED-2024-2025-01 for the FY2024-25 endpoint of the same 6-year series."
+AU-FED-2024-2025-01,AU-FED,2024-2025,complaints_investigated,67237,FALSE,ngo_self_reported,SRC-AUNSW-01,"National complaints figure declined from the FY2019-20 figure (73,997) despite population growth - see AU-FED-2019-2025-01. National prosecutions over the same 6 years: 359 (2019-20) to 381 (2024-25), non-monotonic, with a low of 248 in 2023-24."
+AU-VIC-2024-01,AU-VIC,2024-2025,complaints_investigated,10206,FALSE,ngo_self_reported,SRC-AUVIC-01,"RSPCA Victoria, FY2024-25 (RSPCA Australia National Statistics 2024-2025, Table 5)."
+AU-VIC-2024-02,AU-VIC,2024-2025,prosecutions_finalised,47,FALSE,ngo_self_reported,SRC-AUVIC-01,All 47 were successful (100% success rate that year) - see AU-VIC-2024-03.
+AU-VIC-2024-03,AU-VIC,2024-2025,convictions,47,FALSE,ngo_self_reported,SRC-AUVIC-01,100% of finalised prosecutions succeeded this year - an unusually clean rate worth flagging as possibly reflecting case-selection rather than typical enforcement difficulty.
+AU-VIC-2024-04,AU-VIC,2024-2025,routine_inspections,12,FALSE,ngo_self_reported,SRC-AUVIC-01,
+ES-2023-01,ES,2023,reports_received,1153,FALSE,official_government,SRC-ES-02,"'Malos tratos a animales domesticos' (domestic animal abuse) specifically - the single largest category of ALL environmental crime that year (ahead of urban-planning offences at 666 and forest fires at 455), out of a broader SEPRONA environmental-crime total of 6,532 infractions in 2023 (up from 3,818 in 2019) - the 6,532/3,818 figures are for ALL environmental crime, not animal-specific, and should not be confused with the 1,153 animal-specific count."
+UK-ENG-2016-2022-01,UK-ENG,2016-2022,prosecutions_initiated,3214,FALSE,official_government,SRC-UKENG-02,"This is an ANNUAL AVERAGE across the period (MoJ Court Proceedings Database), not a single-year count or a period total - do not sum across years using this figure."
+UK-ENG-2016-2022-02,UK-ENG,2016-2022,convictions,63,TRUE,official_government,SRC-UKENG-02,Average conviction rate across the period.
+UK-ENG-2007-2024-01,UK-ENG,2007-2024,prosecutions_initiated,15070,FALSE,ngo_self_reported,SRC-UKENG-02,"RSPCA-initiated prosecutions, cumulative total since the Animal Welfare Act 2006 came into force (April 2007) through September 2024 - a 17-year cumulative total, not annual."
+UK-ENG-2019-01,UK-ENG,2019,prosecutions_finalised,661,FALSE,ngo_self_reported,SRC-UKENG-02,RSPCA Prosecutions Annual Report 2019: defendants convicted.
+UK-ENG-2019-02,UK-ENG,2019,convictions,93.7,TRUE,ngo_self_reported,SRC-UKENG-02,"RSPCA-reported success rate, 2019."
