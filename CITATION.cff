@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Comparative Animal Protection Law Database (CAPLD) v0.1"
+type: dataset
+authors:
+  - family-names: "Deng"
+    given-names: "Nanyi"
+    orcid: "https://orcid.org/0009-0009-2017-049X"
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/nanyi-deng/comparative-animal-law-database"
+keywords:
+  - animal law
+  - comparative law
+  - policy surveillance
+  - legal epidemiology
+  - animal welfare
+  - legislation
+abstract: >
+  A structured, provision-level dataset coding penalty structure, scope of
+  application, enforcement mechanism, and linked policy-effect evidence for
+  animal anti-cruelty / animal protection law across 23 jurisdictions
+  (Mainland China, Taiwan, Hong Kong, Macau, Japan, South Korea, Singapore,
+  United States federal, Canada federal, England and Wales, Scotland,
+  Northern Ireland, the European Union, Germany, France, Switzerland,
+  the Netherlands, Italy, Spain, Australia federal, New South Wales,
+  Victoria, and New Zealand). Applies a policy-surveillance / legal-
+  epidemiology coding methodology, not previously applied to this legal
+  domain, with an explicit three-tier source-verification scheme
+  (verified / snippet / unverified) shipped alongside the data.

@@ -1,0 +1,62 @@
+english_value,chinese_label,used_in_fields
+TRUE,是,"has_general_offence, penalty_administrative_only"
+FALSE,否,"has_general_offence, penalty_administrative_only"
+common_law,普通法系,legal_system
+civil_law,大陆法系,legal_system
+private_prosecution,私人诉讼执法（如英国RSPCA模式）,enforcement_model
+state_veterinary,国家兽医机构执法（如荷兰/瑞士模式）,enforcement_model
+police_administrative,警察/行政机关执法,enforcement_model
+hybrid,混合执法（多机构分工）,enforcement_model
+not_applicable,不适用,"enforcement_model, translation_status"
+unverified,未核实（背景知识，本轮未查证）,"enforcement_model, source_verification_tier, verification_tier, verification_status"
+statute,制定法/成文法,instrument_type
+regulation,行政法规,instrument_type
+case_law,判例法,instrument_type
+administrative_guideline,行政指引（非强制性）,instrument_type
+treaty,条约,instrument_type
+eu_directive,欧盟指令（需成员国转化为国内法，区别于直接适用的法规）,instrument_type
+in_force,现行有效,current_status
+repealed,已废止,current_status
+superseded,已被取代,current_status
+pending,已通过待生效,current_status
+verified,已核实（直接抓取官方一手文本或权威信源）,"source_verification_tier, verification_tier, verification_status"
+snippet,仅见于搜索摘要（未独立核实一手文本）,"source_verification_tier, verification_tier, verification_status"
+official_current,有官方译本且为现行版本,translation_status
+official_but_stale,有官方译本但已过时（未反映最新修法）,translation_status
+project_translation,本项目自译（无官方译本或官方译本不适用）,translation_status
+general_cruelty,一般性虐待罪,provision_type
+neglect_duty_of_care,疏于照顾义务/看管义务,provision_type
+abandonment,遗弃,provision_type
+fighting,斗兽,provision_type
+sexual_abuse,性虐待/兽交,provision_type
+filming_distribution,拍摄传播虐待内容,provision_type
+killing,杀害,provision_type
+nuisance_dangerous_animal,扰民/危险动物治安条款（非虐待性质，需与一般性虐待罪区分）,provision_type
+all_vertebrates,全部脊椎动物,animal_scope
+vertebrates_plus_designated_invertebrates_by_regulation,脊椎动物+行政令另行指定的无脊椎动物（如瑞士模式）,animal_scope
+vertebrates_plus_cephalopods_policy_only,脊椎动物+头足类（仅纳入政策审查范围，不构成刑事罪名保护范围）,animal_scope
+domestic_and_captive_only_with_named_exclusions,仅限驯养/圈养动物，且明文排除特定类别（如猎犬、宗教屠宰动物）,animal_scope
+protected_wildlife_species_only,仅限受国家重点保护的野生动物,animal_scope
+captive_bred_wildlife_only,仅限人工繁育野生动物,animal_scope
+livestock_and_disease_vectors_only,仅限家畜及疫病媒介动物（防疫法框架，非动物福利框架）,animal_scope
+companion_and_livestock_broad,宠物与家畜（宽泛列举式定义）,animal_scope
+vertebrates_excluding_fish,脊椎动物但明确排除鱼类,animal_scope
+all_animals_undifferentiated,全部动物，条文未做物种或驯养状态区分,animal_scope
+single_species_targeted,仅针对单一指定物种（非动物保护通则）,animal_scope
+mammals_birds_reptiles_in_human_possession,处于人的占有下的哺乳类/鸟类/爬行类（明确排除鱼类与两栖类及野外同种个体）,animal_scope
+ownership_ban,从业/饲养禁止令,ancillary_orders
+confiscation,没收,ancillary_orders
+mandatory_counseling,强制心理辅导,ancillary_orders
+corporate_liability,法人责任,ancillary_orders
+restitution_order,赔偿令（责令赔偿救助/看护费用）,ancillary_orders
+forfeiture,充公,ancillary_orders
+registry_listing,名录登记（如虐待者名录）,ancillary_orders
+business_license_revocation,吊销营业执照,ancillary_orders
+official_direct_fetch,官方一手直接抓取,fetch_method
+secondary_mirror,二手镜像站点,fetch_method
+search_snippet,搜索引擎摘要,fetch_method
+quasi_experimental_prepost,准实验设计（修法前后对照）,design_type
+diff_in_diff,双重差分法,design_type
+descriptive_only,仅描述性统计（非因果设计）,design_type
+qualitative_content_analysis,质性内容分析,design_type
+no_evaluation_found,系统检索后未发现相关评估研究,design_type
