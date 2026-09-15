@@ -41,7 +41,7 @@ and New Zealand.
 | `data/provisions.csv` | 42 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
 | `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
 | `data/sources.csv` | 45 | Every claim traces to a source with a retrieval date and verification tier |
-| `data/policy_effect_studies.csv` | 23 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects |
+| `data/policy_effect_studies.csv` | 35 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 23 jurisdictions |
 | `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of 23 jurisdictions (EU excluded by design), including explicit confirmed-absence findings |
 
 `docs/data_dictionary.csv` documents every field and its controlled
