@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "Comparative Animal Protection Law Database (CAPLD) v0.1-draft"
+title: "Animal Protection Law Database (APLD) v0.1-draft"
 version: "0.1-draft"
 type: dataset
 authors:
@@ -8,7 +8,7 @@ authors:
     given-names: "Nanyi"
     orcid: "https://orcid.org/0009-0009-2017-049X"
 license: CC-BY-SA-4.0
-repository-code: "https://github.com/nanyi-deng/comparative-animal-law-database"
+repository-code: "https://github.com/nanyi-deng/apld"
 keywords:
   - animal law
   - comparative law

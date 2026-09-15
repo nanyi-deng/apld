@@ -1,4 +1,4 @@
-Comparative Animal Protection Law Database (CAPLD, working title) — Dataset License
+Animal Protection Law Database (APLD) — Dataset License
 =====================================================================================
 
 The dataset files under data/ and docs/ (jurisdictions.csv, legal_instruments.csv,

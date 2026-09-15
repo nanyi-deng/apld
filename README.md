@@ -1,6 +1,5 @@
-# Comparative Animal Protection Law Database (CAPLD)
+# Animal Protection Law Database (APLD)
 
-*"CAPLD" is a working title, not yet finalized.*
 
 > **Status: v0.1-draft — human verification pass in progress, not yet
 > complete.** Every record already carries a `verification_tier` field
