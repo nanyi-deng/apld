@@ -39,9 +39,9 @@ and New Zealand.
 |---|---|---|
 | `data/jurisdictions.csv` | 23 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
 | `data/legal_instruments.csv` | 38 | Statutes, regulations, and treaties, with source-verification tier |
-| `data/provisions.csv` | 39 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
-| `data/amendments.csv` | 24 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 34 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/provisions.csv` | 41 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders |
+| `data/amendments.csv` | 27 | Reform history, with enactment date and effective date tracked separately |
+| `data/sources.csv` | 36 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 23 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects |
 | `data/enforcement_statistics.csv` | 44 | Jurisdiction-year enforcement figures (prosecutions, convictions, arrests) for 10 jurisdictions with strong official time series |
 
@@ -69,10 +69,12 @@ and found to be incorrect; see `docs/methodology.md` for examples.
   remaining 13 need dedicated retrieval work — several official sources
   (FBI NIBRS, Statistics Canada) are interactive tools that resist plain
   web scraping and need a direct API/CSV pull instead.
-- Several jurisdictions have known, explicitly flagged gaps (e.g. New
-  Zealand's primary statutory text could not be retrieved this round;
-  Macau's sources are the weakest-verified in the dataset). These are
-  documented in each record's `notes` field, not silently smoothed over.
+- Several jurisdictions still have known, explicitly flagged gaps (e.g.
+  New Zealand's *current* consolidated statutory text remains blocked by
+  a Cloudflare challenge that resists automated retrieval — a 2007
+  official reprint was recovered instead, so current penalty figures rest
+  on secondary sources rather than primary text). These are documented in
+  each record's `notes` field, not silently smoothed over.
 - A Chinese-language policy brief distilling findings for a legislative-
   reference audience is planned as a companion document, not yet written.
 
