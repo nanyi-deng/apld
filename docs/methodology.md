@@ -128,20 +128,21 @@ hidden.
   legal systems and enforcement models, not for global representativeness.
 - **Row granularity for `abandonment` and `fighting` is inconsistent
   across jurisdictions, and this is a structural limitation, not an
-  oversight to be fixed by adding rows piecemeal.** Only Spain has a
-  standalone `abandonment` provision row, and only Canada and Italy have
-  a standalone `fighting` row — not because other jurisdictions leave
-  these conducts unregulated, but because this dataset creates one row
-  per *statutory section*, and most jurisdictions fold abandonment and/or
-  fighting into the same section as general cruelty or duty-of-care
+  oversight to be fixed by adding rows piecemeal.** Spain, Shanghai, and
+  Guangzhou have standalone `abandonment` provision rows, and Canada and
+  Italy have standalone `fighting` rows — not because other jurisdictions
+  leave these conducts unregulated, but because this dataset creates one
+  row per *statutory section*, and most jurisdictions fold abandonment
+  and/or fighting into the same section as general cruelty or duty-of-care
   (e.g. Singapore's s.41C covers neglect and abandonment together;
   Victoria's s.9 folds wounding, confinement, and abandonment into one
   offence; Switzerland's Art. 26 lists animal fighting as one of five
-  sub-offences in a single article). **Do not count standalone
-  `abandonment`/`fighting` rows as a jurisdiction-comparison metric** —
-  read the `notes` field of that jurisdiction's `general_cruelty` or
-  `neglect_duty_of_care` rows first, since the conduct is very often
-  covered there instead.
+  sub-offences in a single article; Beijing's Art. 17(9) and China's new
+  Chengdu ordinance both bundle abuse and abandonment in one clause).
+  **Do not count standalone `abandonment`/`fighting` rows as a
+  jurisdiction-comparison metric** — read the `notes` field of that
+  jurisdiction's `general_cruelty` or `neglect_duty_of_care` rows first,
+  since the conduct is very often covered there instead.
 - A handful of date fields are intentionally blank rather than
   fabricated — see `data_dictionary.csv` for `provisions.effective_date`
   and `amendments.enactment_date`/`effective_date`, each of which
