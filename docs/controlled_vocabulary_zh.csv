@@ -60,3 +60,5 @@ diff_in_diff,双重差分法,design_type
 descriptive_only,仅描述性统计（非因果设计）,design_type
 qualitative_content_analysis,质性内容分析,design_type
 no_evaluation_found,系统检索后未发现相关评估研究,design_type
+all_animals_explicitly_enumerated,全部动物，条文以穷尽式列举方式明确涵盖各类物种（区别于全无区分式的沉默表述）,animal_scope
+vertebrates_plus_named_invertebrates_in_statute,脊椎动物+成文法条文本身直接列名的特定无脊椎动物（如新西兰在定义条款中直接列出头足类与十足目甲壳类，非另行授权行政令）,animal_scope
