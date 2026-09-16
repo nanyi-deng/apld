@@ -46,10 +46,10 @@ because Chinese cities have no independent legal system of their own.
 | File | Rows | Contents |
 |---|---|---|
 | `data/jurisdictions.csv` | 29 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
-| `data/legal_instruments.csv` | 61 | Statutes, regulations, and treaties, with source-verification tier |
-| `data/provisions.csv` | 71 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
+| `data/legal_instruments.csv` | 62 | Statutes, regulations, and treaties, with source-verification tier |
+| `data/provisions.csv` | 72 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
 | `data/amendments.csv` | 38 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 88 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/sources.csv` | 89 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 40 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 29 jurisdictions |
 | `data/enforcement_statistics.csv` | 92 | Jurisdiction-year enforcement figures for 28 of 29 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
 
