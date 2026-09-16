@@ -14,7 +14,7 @@
 > versions with a changelog, not silently edited in place.
 
 A structured, provision-level dataset comparing animal anti-cruelty / animal
-protection law across 23 jurisdictions. Unlike existing country-level
+protection law across 27 jurisdictions. Unlike existing country-level
 scoring indices (e.g. the World Animal Protection Animal Protection Index)
 or full-text legal archives (e.g. FAOLEX, the Global Animal Law Association
 database), this dataset codes **penalty structure, scope of application,
@@ -27,22 +27,30 @@ methodology this project draws on.
 ## Coverage (v0.1)
 
 Mainland China, Taiwan, Hong Kong, Macau, Japan, South Korea, Singapore,
-United States (federal), Canada (federal), England and Wales, Scotland,
-Northern Ireland, the European Union, Germany, France, Switzerland, the
-Netherlands, Italy, Spain, Australia (federal, New South Wales, Victoria),
-and New Zealand.
+United States (federal, California, Texas), Canada (federal, Ontario,
+Quebec), England and Wales, Scotland, Northern Ireland, the European
+Union, Germany, France, Switzerland, the Netherlands, Italy, Spain,
+Australia (federal, New South Wales, Victoria), and New Zealand.
+
+California, Texas, Ontario, and Quebec were added 2026-09-15 as their own
+jurisdiction rows (not filed under the federal entry) because US states
+and Canadian provinces have genuinely independent legislative authority
+over criminal law here, mirroring how Australia's federal/state split is
+already modeled (`AU-FED`/`AU-NSW`/`AU-VIC`) — unlike Mainland China's
+municipal ordinances, which are filed under the single `CN` jurisdiction
+because Chinese cities have no independent legal system of their own.
 
 ## What's in this release
 
 | File | Rows | Contents |
 |---|---|---|
-| `data/jurisdictions.csv` | 23 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
-| `data/legal_instruments.csv` | 53 | Statutes, regulations, and treaties, with source-verification tier |
-| `data/provisions.csv` | 58 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
+| `data/jurisdictions.csv` | 27 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
+| `data/legal_instruments.csv` | 59 | Statutes, regulations, and treaties, with source-verification tier |
+| `data/provisions.csv` | 67 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
 | `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 61 | Every claim traces to a source with a retrieval date and verification tier |
-| `data/policy_effect_studies.csv` | 35 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 23 jurisdictions |
-| `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of 23 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
+| `data/sources.csv` | 66 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/policy_effect_studies.csv` | 35 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 23 jurisdictions that existed when this table was last surveyed - the 4 new US/Canada sub-national jurisdictions added 2026-09-15 do not yet have their own policy_effect_studies entries |
+| `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of the 23 original jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings - the 4 new US/Canada sub-national jurisdictions added 2026-09-15 are not yet covered |
 
 `docs/data_dictionary.csv` documents every field and its controlled
 vocabulary. `docs/methodology.md` explains the coding approach and its
@@ -72,6 +80,25 @@ enforcement mechanism of its own. All of this is filed under the single
 `CN` jurisdiction rather than as separate sub-national jurisdictions,
 since these are supplementary municipal/national regulations, not
 independent legal systems.
+
+The US and Canada, by contrast, received genuine new jurisdiction rows
+the same day: California and Texas (US), Ontario and Quebec (Canada),
+since American states and Canadian provinces have independent legislative
+authority the way Chinese cities do not. Findings include: California's
+felony-eligible "wobbler" for animal cruelty applies to passive neglect,
+not only intentional cruelty, with no prior-conviction gate — but
+California is not a top-5 US state on ALDF's holistic ranking despite
+that specific feature; Texas maintains two separate cruelty statutes
+(livestock vs. non-livestock) with a first-offence felony ceiling of 10
+years, escalating to 20 on a repeat offence — the highest criminal
+exposure in this dataset; Ontario's 2019 welfare-services law never uses
+"cruelty" as an operative term and defines no "animal" at all, built
+instead on an outcome-based "distress" standard; and Quebec's celebrated
+2015 Civil Code reform declaring animals "sentient beings" creates no
+penalty of its own — all penalties come from a separate statute under
+which even a first-offence conviction for causing an animal's death is
+fine-only, with imprisonment available solely as a repeat-offence
+enhancement.
 
 ## A note on what "verified" means here
 

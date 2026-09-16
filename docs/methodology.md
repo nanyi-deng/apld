@@ -124,8 +124,16 @@ hidden.
   parent instrument or source, following an independent audit that found
   a document-level tier can overstate confidence in a specific figure
   within it).
-- The dataset currently covers 23 jurisdictions selected for a mix of
+- The dataset currently covers 27 jurisdictions selected for a mix of
   legal systems and enforcement models, not for global representativeness.
+  23 were selected as the original v1 scope; 4 more (California, Texas,
+  Ontario, Quebec) were added 2026-09-15 as genuine sub-national
+  jurisdictions — mirroring the existing `AU-FED`/`AU-NSW`/`AU-VIC` split
+  — because US states and Canadian provinces have independent legislative
+  authority over this area of law, unlike Mainland China's municipal
+  ordinances, which stay filed under the single `CN` jurisdiction. The
+  two evidence tables (`policy_effect_studies.csv`, `enforcement_statistics.csv`)
+  do not yet cover these 4 new jurisdictions.
 - **Row granularity for `abandonment` and `fighting` is inconsistent
   across jurisdictions, and this is a structural limitation, not an
   oversight to be fixed by adding rows piecemeal.** Spain, Shanghai, and

@@ -19,15 +19,13 @@ keywords:
 abstract: >
   A structured, provision-level dataset coding penalty structure, scope of
   application, enforcement mechanism, and linked policy-effect evidence for
-  animal anti-cruelty / animal protection law across 23 jurisdictions
+  animal anti-cruelty / animal protection law across 27 jurisdictions
   (Mainland China, Taiwan, Hong Kong, Macau, Japan, South Korea, Singapore,
-  United States federal, Canada federal, England and Wales, Scotland,
-  Northern Ireland, the European Union, Germany, France, Switzerland,
-  the Netherlands, Italy, Spain, Australia federal, New South Wales,
-  Victoria, and New Zealand). Applies a policy-surveillance / legal-
-  epidemiology coding methodology, not previously applied to this legal
-  domain, with an explicit three-tier source-verification scheme
-  (verified / snippet / unverified) shipped alongside the data. THIS IS A
-  DRAFT RELEASE: an independent human verification pass over the coded
-  content is in progress and not yet complete. The verification_tier field
-  describes source retrieval quality, not human review status.
+  United States federal, California, Texas, Canada federal, Ontario,
+  Quebec, England and Wales, Scotland, Northern Ireland, the European
+  Union, Germany, France, Switzerland, the Netherlands, Italy, Spain,
+  Australia federal, New South Wales, Victoria, and New Zealand). Applies
+  a policy-surveillance / legal-epidemiology coding methodology, not
+  previously applied to this legal domain, with an explicit three-tier
+  source-verification scheme (verified / snippet / unverified) shipped
+  alongside the data.
