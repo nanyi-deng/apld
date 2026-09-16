@@ -37,10 +37,10 @@ and New Zealand.
 | File | Rows | Contents |
 |---|---|---|
 | `data/jurisdictions.csv` | 23 | Legal system, enforcement model, whether a general anti-cruelty offence exists |
-| `data/legal_instruments.csv` | 51 | Statutes, regulations, and treaties, with source-verification tier |
-| `data/provisions.csv` | 56 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
+| `data/legal_instruments.csv` | 53 | Statutes, regulations, and treaties, with source-verification tier |
+| `data/provisions.csv` | 58 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
 | `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 59 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/sources.csv` | 61 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 35 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 23 jurisdictions |
 | `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of 23 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
 
@@ -50,11 +50,15 @@ limitations in full, including a 2026-09-15 independent-audit section
 covering what was checked, what was found and fixed, and what remains open.
 
 Mainland China's own patchwork of law received deeper coverage on
-2026-09-15: a 2020-02-24 national NPC Standing Committee Decision banning
-wildlife consumption (the traceable legal trigger, via a shared livestock-
-catalogue mechanism) prompted Shenzhen, Zhuhai, Guangzhou, and Beijing to
-each pass supporting local legislation within about two months — all
-excluding cats/dogs by omission from a food-species whitelist rather than
+2026-09-15: Tianjin (2020-02-14) and Fujian (2020-02-18) passed the
+earliest provincial-level wildlife-consumption bans, using a named-
+category mechanism; a 2020-02-24 national NPC Standing Committee Decision
+then introduced the livestock-catalogue whitelist mechanism (the
+traceable legal trigger for every ordinance that followed it, not
+something localities had already converged on independently), prompting
+Shenzhen, Zhuhai, Guangzhou, and Beijing to each pass supporting local
+legislation within about two months — all excluding cats/dogs by omission
+from a food-species whitelist rather than
 naming them, contrary to widespread media framing — while Shanghai
 repealed its old wildlife law in the same window but did not pass a
 replacement until 2023. Separately, municipal dog-keeping ordinances in
