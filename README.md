@@ -48,9 +48,9 @@ because Chinese cities have no independent legal system of their own.
 | `data/legal_instruments.csv` | 59 | Statutes, regulations, and treaties, with source-verification tier |
 | `data/provisions.csv` | 67 | Provision-level coding: penalty tiers, animal-scope classification, ancillary orders, and (from 2026-09-15) its own row-level `verification_tier` |
 | `data/amendments.csv` | 30 | Reform history, with enactment date and effective date tracked separately |
-| `data/sources.csv` | 66 | Every claim traces to a source with a retrieval date and verification tier |
-| `data/policy_effect_studies.csv` | 35 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 23 jurisdictions that existed when this table was last surveyed - the 4 new US/Canada sub-national jurisdictions added 2026-09-15 do not yet have their own policy_effect_studies entries |
-| `data/enforcement_statistics.csv` | 67 | Jurisdiction-year enforcement figures for 22 of the 23 original jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings - the 4 new US/Canada sub-national jurisdictions added 2026-09-15 are not yet covered |
+| `data/sources.csv` | 74 | Every claim traces to a source with a retrieval date and verification tier |
+| `data/policy_effect_studies.csv` | 38 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 27 jurisdictions |
+| `data/enforcement_statistics.csv` | 81 | Jurisdiction-year enforcement figures for 26 of 27 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
 
 `docs/data_dictionary.csv` documents every field and its controlled
 vocabulary. `docs/methodology.md` explains the coding approach and its

@@ -131,9 +131,11 @@ hidden.
   jurisdictions — mirroring the existing `AU-FED`/`AU-NSW`/`AU-VIC` split
   — because US states and Canadian provinces have independent legislative
   authority over this area of law, unlike Mainland China's municipal
-  ordinances, which stay filed under the single `CN` jurisdiction. The
-  two evidence tables (`policy_effect_studies.csv`, `enforcement_statistics.csv`)
-  do not yet cover these 4 new jurisdictions.
+  ordinances, which stay filed under the single `CN` jurisdiction. Both
+  evidence tables (`policy_effect_studies.csv`, `enforcement_statistics.csv`)
+  were extended to cover all 4 new jurisdictions the same day; a
+  misfiled Ontario row (originally attributed to `CA-FED`, written before
+  `CA-ON` existed as its own jurisdiction) was corrected in the process.
 - **Row granularity for `abandonment` and `fighting` is inconsistent
   across jurisdictions, and this is a structural limitation, not an
   oversight to be fixed by adding rows piecemeal.** Spain, Shanghai, and
