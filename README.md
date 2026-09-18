@@ -51,7 +51,7 @@ because Chinese cities have no independent legal system of their own.
 | `data/amendments.csv` | 40 | Reform history, with enactment date and effective date tracked separately |
 | `data/sources.csv` | 100 | Every claim traces to a source with a retrieval date and verification tier |
 | `data/policy_effect_studies.csv` | 40 | Registered evidence (or documented absence of evidence) on whether legal reforms produced measurable effects, covering all 29 jurisdictions |
-| `data/enforcement_statistics.csv` | 97 | Jurisdiction-year enforcement figures for 28 of 29 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
+| `data/enforcement_statistics.csv` | 103 | Jurisdiction-year enforcement figures for 28 of 29 jurisdictions (EU excluded by design), including explicit confirmed-absence and inconclusive-search findings |
 
 `docs/data_dictionary.csv` documents every field and its controlled
 vocabulary. `docs/methodology.md` explains the coding approach and its
